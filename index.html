@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Pernikahan Ridwansyah & Siti Aminah — 04 Juli 2026</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'gold': '#C6A43F',
+            'gold-dark': '#9E8232',
+            'cream': '#F5F0E6',
+            'ivory': '#FAF7F0',
+            'charcoal': '#2C2C2C',
+            'brown-soft': '#4A3B2C',
+            'brown-deep': '#3A2E22',
+            'taupe': '#8B7A6B',
+          },
+          fontFamily: {
+            'playfair': ['Playfair Display', 'serif'],
+            'cormorant': ['Cormorant Garamond', 'serif'],
+            'lato': ['Lato', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Lato:wght@300;400;700&display=swap');
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Lato', sans-serif;
+      background-color: #FAF7F0;
+      overflow-x: hidden;
+    }
+    
+    /* Animations */
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes scaleIn {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    @keyframes softPulse {
+      0% { box-shadow: 0 0 0 0 rgba(198,164,63,0.3); }
+      70% { box-shadow: 0 0 0 15px rgba(198,164,63,0); }
+      100% { box-shadow: 0 0 0 0 rgba(198,164,63,0); }
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    
+    .animate-fadeUp {
+      animation: fadeInUp 1s cubic-bezier(0.2, 0.9, 0.4, 1.1) forwards;
+    }
+    .animate-fadeIn {
+      animation: fadeIn 1.2s ease forwards;
+    }
+    .animate-scaleIn {
+      animation: scaleIn 0.8s ease forwards;
+    }
+    .pulse-border {
+      animation: softPulse 2.5s infinite;
+    }
+    .float-slow {
+      animation: float 4s ease-in-out infinite;
+    }
+    
+    /* Elegant divider */
+    .elegant-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .elegant-divider .line {
+      width: 60px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #C6A43F, #C6A43F, transparent);
+    }
+    .elegant-divider .dot {
+      width: 6px;
+      height: 6px;
+      background: #C6A43F;
+      border-radius: 50%;
+    }
+    
+    /* Batik Pattern Seamless - Parang Motif (Hero) */
+    .batik-hero {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cdefs%3E%3Cpattern id='batikHero' x='0' y='0' width='120' height='120' patternUnits='userSpaceOnUse'%3E%3Cpath d='M0 40 Q20 15 40 40 Q60 65 80 40 Q100 15 120 40' fill='none' stroke='%23C6A43F' stroke-width='1.8'/%3E%3Cpath d='M0 80 Q20 55 40 80 Q60 105 80 80 Q100 55 120 80' fill='none' stroke='%23C6A43F' stroke-width='1.8'/%3E%3Cpath d='M0 120 Q20 95 40 120 Q60 145 80 120' fill='none' stroke='%23C6A43F' stroke-width='1.8'/%3E%3Ccircle cx='40' cy='40' r='5' fill='none' stroke='%23C6A43F' stroke-width='1.2'/%3E%3Ccircle cx='80' cy='40' r='5' fill='none' stroke='%23C6A43F' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='0' r='4' fill='none' stroke='%23C6A43F' stroke-width='1.2'/%3E%3Ccircle cx='120' cy='0' r='4' fill='none' stroke='%23C6A43F' stroke-width='1.2'/%3E%3Ccircle cx='0' cy='80' r='4' fill='none' stroke='%23C6A43F' stroke-width='1.2'/%3E%3Ccircle cx='120' cy='80' r='4' fill='none' stroke='%23C6A43F' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='80' r='5' fill='none' stroke='%23C6A43F' stroke-width='1.2'/%3E%3Ccircle cx='80' cy='80' r='5' fill='none' stroke='%23C6A43F' stroke-width='1.2'/%3E%3Cpath d='M20 20 L30 30 M50 50 L60 60 M70 20 L80 30' stroke='%23C6A43F' stroke-width='0.8' opacity='0.6'/%3E%3Cpath d='M100 50 L110 60 M20 70 L30 80 M100 100 L110 110' stroke='%23C6A43F' stroke-width='0.8' opacity='0.6'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23batikHero)'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 120px 120px;
+      opacity: 0.08;
+    }
+    
+    /* Batik Pattern untuk section terang (Ucapan) - SANGAT SUBTLE */
+    .batik-ucapan {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3Cpattern id='batikUcapan' x='0' y='0' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Cpath d='M0 30 Q25 10 50 30 Q75 50 100 30' fill='none' stroke='%23C6A43F' stroke-width='1.2'/%3E%3Cpath d='M0 70 Q25 50 50 70 Q75 90 100 70' fill='none' stroke='%23C6A43F' stroke-width='1.2'/%3E%3Ccircle cx='50' cy='30' r='4' fill='none' stroke='%23C6A43F' stroke-width='0.8'/%3E%3Ccircle cx='50' cy='70' r='4' fill='none' stroke='%23C6A43F' stroke-width='0.8'/%3E%3Ccircle cx='0' cy='0' r='3' fill='none' stroke='%23C6A43F' stroke-width='0.8'/%3E%3Ccircle cx='100' cy='0' r='3' fill='none' stroke='%23C6A43F' stroke-width='0.8'/%3E%3Ccircle cx='0' cy='100' r='3' fill='none' stroke='%23C6A43F' stroke-width='0.8'/%3E%3Ccircle cx='100' cy='100' r='3' fill='none' stroke='%23C6A43F' stroke-width='0.8'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23batikUcapan)'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 100px 100px;
+      opacity: 0.2;
+    }
+    
+    /* Batik Pattern untuk Hadiah - SANGAT SUBTLE */
+    .batik-hadiah {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cdefs%3E%3Cpattern id='batikHadiah' x='0' y='0' width='120' height='120' patternUnits='userSpaceOnUse'%3E%3Cpath d='M0 40 Q20 15 40 40 Q60 65 80 40 Q100 15 120 40' fill='none' stroke='%23C6A43F' stroke-width='1.2'/%3E%3Cpath d='M0 80 Q20 55 40 80 Q60 105 80 80 Q100 55 120 80' fill='none' stroke='%23C6A43F' stroke-width='1.2'/%3E%3Ccircle cx='40' cy='40' r='4' fill='none' stroke='%23C6A43F' stroke-width='0.8'/%3E%3Ccircle cx='80' cy='40' r='4' fill='none' stroke='%23C6A43F' stroke-width='0.8'/%3E%3Ccircle cx='0' cy='0' r='3' fill='none' stroke='%23C6A43F' stroke-width='0.8'/%3E%3Ccircle cx='120' cy='0' r='3' fill='none' stroke='%23C6A43F' stroke-width='0.8'/%3E%3Ccircle cx='0' cy='80' r='3' fill='none' stroke='%23C6A43F' stroke-width='0.8'/%3E%3Ccircle cx='120' cy='80' r='3' fill='none' stroke='%23C6A43F' stroke-width='0.8'/%3E%3Ccircle cx='40' cy='80' r='4' fill='none' stroke='%23C6A43F' stroke-width='0.8'/%3E%3Ccircle cx='80' cy='80' r='4' fill='none' stroke='%23C6A43F' stroke-width='0.8'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23batikHadiah)'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 120px 120px;
+      opacity: 0.06;
+    }
+    
+    /* Scroll reveal */
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(35px);
+      transition: opacity 0.9s ease, transform 0.9s ease;
+    }
+    .reveal-on-scroll.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    /* Countdown cards */
+    .countdown-card {
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(198,164,63,0.3);
+      transition: all 0.3s;
+      min-width: 90px;
+    }
+    @media (min-width: 640px) {
+      .countdown-card { min-width: 110px; }
+    }
+    .countdown-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(198,164,63,0.6);
+      background: rgba(255,255,255,0.12);
+    }
+    
+    /* Photo circle */
+    .photo-circle {
+      background: linear-gradient(135deg, #C6A43F, #9E8232);
+      box-shadow: 0 15px 35px -10px rgba(0,0,0,0.2);
+    }
+    
+    /* Card hover */
+    .hover-card {
+      transition: all 0.4s ease;
+    }
+    .hover-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 35px -12px rgba(0,0,0,0.15);
+    }
+    
+    /* Rekening card */
+    .rekening-card {
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(12px);
+      transition: all 0.4s ease;
+      border: 1px solid rgba(198,164,63,0.3);
+    }
+    .rekening-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255,255,255,0.12);
+      border-color: #C6A43F;
+    }
+    
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #3A2E22;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C6A43F;
+      border-radius: 3px;
+    }
+    
+    /* Button style */
+    .btn-outline {
+      border: 1.5px solid #C6A43F;
+      transition: all 0.3s;
+    }
+    .btn-outline:hover {
+      background: #C6A43F;
+      color: #2C2C2C;
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 w-full z-50 py-3 sm:py-4 md:py-5 px-4 sm:px-6 md:px-12 flex justify-between items-center bg-[#FAF7F0]/95 backdrop-blur-md border-b border-[#C6A43F]/20 transition-all duration-300">
+    <div class="font-playfair italic text-gold text-lg sm:text-xl md:text-2xl tracking-wide">R & A</div>
+    <ul class="hidden md:flex gap-6 lg:gap-10 text-xs lg:text-sm tracking-[0.2em] uppercase font-light text-brown-soft">
+      <li><a href="#pasangan" class="hover:text-gold transition-colors duration-300">Pasangan</a></li>
+      <li><a href="#acara" class="hover:text-gold transition-colors duration-300">Acara</a></li>
+      <li><a href="#ucapan" class="hover:text-gold transition-colors duration-300">Ucapan</a></li>
+      <li><a href="#hadiah" class="hover:text-gold transition-colors duration-300">Hadiah</a></li>
+    </ul>
+    <button id="mobileMenuBtn" class="md:hidden text-brown-soft focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+    </button>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden fixed top-14 left-0 w-full bg-[#FAF7F0]/98 backdrop-blur-lg z-40 py-6 px-6 border-b border-gold/20 md:hidden">
+    <ul class="flex flex-col gap-5 text-center">
+      <li><a href="#pasangan" class="text-brown-soft hover:text-gold transition-colors text-sm tracking-[0.2em] uppercase">Pasangan</a></li>
+      <li><a href="#acara" class="text-brown-soft hover:text-gold transition-colors text-sm tracking-[0.2em] uppercase">Acara</a></li>
+      <li><a href="#ucapan" class="text-brown-soft hover:text-gold transition-colors text-sm tracking-[0.2em] uppercase">Ucapan</a></li>
+      <li><a href="#hadiah" class="text-brown-soft hover:text-gold transition-colors text-sm tracking-[0.2em] uppercase">Hadiah</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO SECTION dengan Batik -->
+  <section class="relative min-h-screen flex items-center justify-center text-center overflow-hidden bg-gradient-to-br from-[#3A2E22] via-[#4A3B2C] to-[#2C2C2C]">
+    <div class="absolute inset-0 batik-hero"></div>
+    <div class="absolute inset-0 bg-black/20"></div>
+    <div class="absolute inset-4 sm:inset-6 md:inset-10 border border-gold/30 pointer-events-none">
+      <div class="absolute -top-3 -left-3 w-8 h-8 sm:w-10 sm:h-10 border-t-2 border-l-2 border-gold"></div>
+      <div class="absolute -bottom-3 -right-3 w-8 h-8 sm:w-10 sm:h-10 border-b-2 border-r-2 border-gold"></div>
+    </div>
+    <div class="relative z-10 px-4 sm:px-6 max-w-5xl mx-auto">
+      <p class="text-gold text-[0.7rem] sm:text-xs tracking-[0.35em] uppercase mb-6 sm:mb-8 animate-fadeUp opacity-0" style="animation-delay: 0.1s">Dengan Rahmat Tuhan Yang Maha Esa</p>
+      <div class="text-3xl sm:text-4xl text-gold/60 mb-4 sm:mb-6 animate-fadeUp opacity-0 float-slow" style="animation-delay: 0.2s">✦ ✦ ✦</div>
+      <h1 class="font-playfair text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl italic text-cream font-semibold leading-[1.1] tracking-wide animate-fadeUp opacity-0" style="animation-delay: 0.3s">Muhamad Ridwansyah</h1>
+      <span class="font-cormorant text-4xl sm:text-5xl md:text-6xl text-gold block my-3 sm:my-4 animate-fadeUp opacity-0" style="animation-delay: 0.45s">&</span>
+      <h1 class="font-playfair text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl italic text-cream font-semibold leading-[1.1] animate-fadeUp opacity-0" style="animation-delay: 0.6s">Siti Aminah</h1>
+      <div class="elegant-divider my-6 sm:my-8 md:my-10 animate-fadeUp opacity-0" style="animation-delay: 0.75s">
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+      </div>
+      <p class="text-gold/80 tracking-[0.2em] text-xs sm:text-sm md:text-base uppercase animate-fadeUp opacity-0" style="animation-delay: 0.85s">Sabtu, 04 Juli 2026</p>
+      <p class="text-cream/60 text-[0.7rem] sm:text-xs md:text-sm tracking-[0.2em] uppercase mt-3 sm:mt-4 animate-fadeUp opacity-0" style="animation-delay: 0.95s">Kp Kaum RT 03 RW 11 No 21 · Kel. Ciparigi, Bogor Utara</p>
+      <div class="mt-8 sm:mt-10 md:mt-12 animate-fadeUp opacity-0" style="animation-delay: 1.05s">
+        <a href="#hadiah" class="btn-outline inline-block px-6 sm:px-8 md:px-10 py-3 sm:py-3.5 md:py-4 text-[0.7rem] sm:text-xs tracking-[0.25em] uppercase text-cream hover:text-charcoal transition-all duration-500">Kirim Hadiah & Doa</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN SECTION (tanpa batik) -->
+  <div class="bg-brown-deep py-10 sm:py-12 md:py-14 text-center relative">
+    <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent"></div>
+    <p class="text-gold/50 text-[0.65rem] sm:text-xs tracking-[0.3em] uppercase mb-4 sm:mb-6">Menuju Hari Bahagia</p>
+    <div class="flex justify-center items-center gap-3 sm:gap-4 md:gap-6 flex-wrap">
+      <div class="countdown-card px-3 sm:px-4 py-3 sm:py-4 rounded-xl"><span id="cd-days" class="font-playfair text-3xl sm:text-4xl md:text-5xl text-gold block font-semibold">00</span><span class="text-[0.6rem] sm:text-xs tracking-[0.2em] text-gold/50 uppercase mt-1 sm:mt-2 block">Hari</span></div>
+      <span class="text-2xl sm:text-3xl text-gold/30 hidden sm:inline">·</span>
+      <div class="countdown-card px-3 sm:px-4 py-3 sm:py-4 rounded-xl"><span id="cd-hours" class="font-playfair text-3xl sm:text-4xl md:text-5xl text-gold block font-semibold">00</span><span class="text-[0.6rem] sm:text-xs tracking-[0.2em] text-gold/50 uppercase mt-1 sm:mt-2 block">Jam</span></div>
+      <span class="text-2xl sm:text-3xl text-gold/30 hidden sm:inline">·</span>
+      <div class="countdown-card px-3 sm:px-4 py-3 sm:py-4 rounded-xl"><span id="cd-mins" class="font-playfair text-3xl sm:text-4xl md:text-5xl text-gold block font-semibold">00</span><span class="text-[0.6rem] sm:text-xs tracking-[0.2em] text-gold/50 uppercase mt-1 sm:mt-2 block">Menit</span></div>
+      <span class="text-2xl sm:text-3xl text-gold/30 hidden sm:inline">·</span>
+      <div class="countdown-card px-3 sm:px-4 py-3 sm:py-4 rounded-xl"><span id="cd-secs" class="font-playfair text-3xl sm:text-4xl md:text-5xl text-gold block font-semibold">00</span><span class="text-[0.6rem] sm:text-xs tracking-[0.2em] text-gold/50 uppercase mt-1 sm:mt-2 block">Detik</span></div>
+    </div>
+  </div>
+
+  <!-- COUPLE SECTION (tanpa batik) -->
+  <section id="pasangan" class="bg-ivory py-16 sm:py-20 md:py-24 lg:py-32">
+    <div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+      <div class="text-center mb-12 sm:mb-16 md:mb-20 reveal-on-scroll">
+        <p class="text-gold text-[0.65rem] sm:text-xs tracking-[0.35em] uppercase mb-2 sm:mb-3">Mempelai</p>
+        <h2 class="font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl italic text-brown-deep font-semibold">Dua Jiwa, Satu Tujuan</h2>
+        <div class="elegant-divider mt-4 sm:mt-5 md:mt-6"><div class="line w-16 sm:w-20"></div><div class="dot"></div><div class="line w-16 sm:w-20"></div></div>
+      </div>
+      <div class="grid md:grid-cols-[1fr_auto_1fr] gap-8 sm:gap-10 md:gap-12 items-center">
+        <div class="text-center reveal-on-scroll transition-all duration-700 hover:translate-y-[-8px]">
+          <div class="w-36 h-36 xs:w-40 xs:h-40 sm:w-44 sm:h-44 md:w-48 md:h-48 mx-auto rounded-full photo-circle flex items-center justify-center mb-4 sm:mb-5 md:mb-6">
+            <div class="w-[132px] h-[132px] xs:w-[148px] xs:h-[148px] sm:w-[164px] sm:h-[164px] md:w-[180px] md:h-[180px] rounded-full bg-gradient-to-br from-brown-soft to-brown-deep flex items-center justify-center shadow-2xl">
+              <span class="font-playfair text-5xl sm:text-6xl md:text-7xl italic text-cream font-bold">M</span>
+            </div>
+          </div>
+          <h3 class="font-playfair text-2xl sm:text-3xl md:text-4xl italic text-brown-deep font-semibold">Muhamad Ridwansyah</h3>
+          <p class="text-taupe text-sm sm:text-base mt-2">Putra dari</p>
+          <p class="text-brown-soft text-base sm:text-lg mt-3 leading-relaxed font-medium">Bapak Hasan Basri<br>& Ibu Siti Awaliyah</p>
+        </div>
+        <div class="text-center reveal-on-scroll">
+          <span class="font-cormorant text-6xl sm:text-7xl md:text-8xl text-gold block">&</span>
+          <p class="text-[0.6rem] sm:text-xs tracking-[0.3em] text-gold/60 uppercase mt-2 sm:mt-3">menikah dalam cinta & doa</p>
+        </div>
+        <div class="text-center reveal-on-scroll transition-all duration-700 hover:translate-y-[-8px]">
+          <div class="w-36 h-36 xs:w-40 xs:h-40 sm:w-44 sm:h-44 md:w-48 md:h-48 mx-auto rounded-full photo-circle flex items-center justify-center mb-4 sm:mb-5 md:mb-6">
+            <div class="w-[132px] h-[132px] xs:w-[148px] xs:h-[148px] sm:w-[164px] sm:h-[164px] md:w-[180px] md:h-[180px] rounded-full bg-gradient-to-br from-brown-soft to-brown-deep flex items-center justify-center shadow-2xl">
+              <span class="font-playfair text-5xl sm:text-6xl md:text-7xl italic text-cream font-bold">S</span>
+            </div>
+          </div>
+          <h3 class="font-playfair text-2xl sm:text-3xl md:text-4xl italic text-brown-deep font-semibold">Siti Aminah</h3>
+          <p class="text-taupe text-sm sm:text-base mt-2">Putri dari (Alm)</p>
+          <p class="text-brown-soft text-base sm:text-lg mt-3 leading-relaxed font-medium">Bapak H. Sulhi<br>& Ibu Hj. Siti Sa'diyah</p>
+          <p class="text-gold/50 text-xs sm:text-sm mt-3 italic">Al-Fatihah</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UCAPAN SECTION dengan Batik VERY SUBTLE -->
+  <section id="ucapan" class="relative bg-cream py-16 sm:py-20 md:py-24 lg:py-32 overflow-hidden">
+    <div class="absolute inset-0 batik-ucapan"></div>
+    <div class="container mx-auto px-4 sm:px-6 max-w-4xl relative z-10">
+      <div class="text-center mb-12 sm:mb-16 reveal-on-scroll">
+        <p class="text-gold text-[0.65rem] sm:text-xs tracking-[0.35em] uppercase mb-2 sm:mb-3">Ucapan & Harapan</p>
+        <h2 class="font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl italic text-brown-deep font-semibold">Kami Berharap Anda Hadir</h2>
+        <div class="elegant-divider mt-4 sm:mt-5 md:mt-6"><div class="line w-16 sm:w-20"></div><div class="dot"></div><div class="line w-16 sm:w-20"></div></div>
+      </div>
+
+      <div id="personalizedCard" class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-xl reveal-on-scroll transition-all duration-500 hover:shadow-2xl text-center border border-gold/30 relative z-10">
+        <div class="inline-block px-4 sm:px-5 py-1 rounded-full bg-gold/15 text-gold text-[0.65rem] sm:text-xs tracking-wider uppercase mb-5 sm:mb-6">Untuk Anda yang Terhormat</div>
+        <div id="greetingText" class="font-playfair text-2xl sm:text-3xl md:text-4xl italic text-brown-deep leading-relaxed"></div>
+        <div class="mt-6 sm:mt-8 text-taupe text-base sm:text-lg md:text-xl leading-relaxed max-w-2xl mx-auto font-light">
+          Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga, apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kedua mempelai.
+        </div>
+        <div class="my-6 sm:my-8 flex justify-center"><div class="w-16 sm:w-20 h-px bg-gradient-to-r from-transparent via-gold to-transparent"></div></div>
+        <p class="text-gold/70 text-sm sm:text-base italic">"Dan doa restu Anda adalah hadiah terindah dalam perjalanan kami."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENT SECTION (tanpa batik) -->
+  <section id="acara" class="bg-ivory py-16 sm:py-20 md:py-24 lg:py-32">
+    <div class="container mx-auto px-4 sm:px-6 max-w-5xl">
+      <div class="text-center mb-12 sm:mb-16 reveal-on-scroll">
+        <p class="text-gold text-[0.65rem] sm:text-xs tracking-[0.35em] uppercase mb-2 sm:mb-3">Rangkaian Acara</p>
+        <h2 class="font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl italic text-brown-deep font-semibold">Hari Bahagia Kami</h2>
+        <div class="elegant-divider mt-4 sm:mt-5 md:mt-6"><div class="line w-16 sm:w-20"></div><div class="dot"></div><div class="line w-16 sm:w-20"></div></div>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
+        <div class="bg-white rounded-xl border border-gold/20 p-6 sm:p-8 md:p-10 text-center hover-card reveal-on-scroll">
+          <div class="w-14 h-14 sm:w-16 sm:h-16 mx-auto rounded-full bg-gold/10 flex items-center justify-center mb-4 sm:mb-5"><span class="text-2xl sm:text-3xl">🕌</span></div>
+          <h3 class="font-playfair text-xl sm:text-2xl md:text-3xl italic text-brown-deep font-semibold">Akad Nikah</h3>
+          <div class="mt-5 sm:mt-6 space-y-2 sm:space-y-3 text-brown-soft text-sm sm:text-base"><strong class="block text-gold text-[0.65rem] sm:text-xs tracking-wider uppercase">Hari & Tanggal</strong>Sabtu, 04 Juli 2026</div>
+          <div class="space-y-2 sm:space-y-3 text-brown-soft text-sm sm:text-base"><strong class="block text-gold text-[0.65rem] sm:text-xs tracking-wider uppercase">Waktu</strong>09.00 – 10.00 WIB</div>
+          <div class="space-y-2 sm:space-y-3 text-brown-soft text-sm sm:text-base"><strong class="block text-gold text-[0.65rem] sm:text-xs tracking-wider uppercase">Lokasi</strong>Kp Kaum RT 03 RW 11 No 21<br>Kel. Ciparigi, Bogor Utara</div>
+        </div>
+        <div class="bg-white rounded-xl border border-gold/20 p-6 sm:p-8 md:p-10 text-center hover-card reveal-on-scroll">
+          <div class="w-14 h-14 sm:w-16 sm:h-16 mx-auto rounded-full bg-gold/10 flex items-center justify-center mb-4 sm:mb-5"><span class="text-2xl sm:text-3xl">🌺</span></div>
+          <h3 class="font-playfair text-xl sm:text-2xl md:text-3xl italic text-brown-deep font-semibold">Resepsi Pernikahan</h3>
+          <div class="mt-5 sm:mt-6 space-y-2 sm:space-y-3 text-brown-soft text-sm sm:text-base"><strong class="block text-gold text-[0.65rem] sm:text-xs tracking-wider uppercase">Hari & Tanggal</strong>Sabtu, 04 Juli 2026</div>
+          <div class="space-y-2 sm:space-y-3 text-brown-soft text-sm sm:text-base"><strong class="block text-gold text-[0.65rem] sm:text-xs tracking-wider uppercase">Waktu</strong>11.00 – Selesai</div>
+          <div class="space-y-2 sm:space-y-3 text-brown-soft text-sm sm:text-base"><strong class="block text-gold text-[0.65rem] sm:text-xs tracking-wider uppercase">Lokasi</strong>Kp Kaum RT 03 RW 11 No 21<br>Kel. Ciparigi, Bogor Utara</div>
+        </div>
+      </div>
+      <div class="text-center mt-10 sm:mt-12 reveal-on-scroll">
+        <a href="https://maps.google.com/?q=Kp+Kaum+RT+03+RW+11+No+21+Ciparigi+Bogor+Utara" target="_blank" class="btn-outline inline-block px-6 sm:px-8 py-2.5 sm:py-3 text-[0.7rem] sm:text-xs tracking-[0.2em] text-brown-deep hover:text-charcoal transition-all duration-300">📍 Lihat Peta Lokasi</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HADIAH SECTION (Doa Restu & Tanda Kasih) dengan Batik VERY SUBTLE -->
+  <section id="hadiah" class="relative bg-gradient-to-br from-brown-deep to-charcoal py-16 sm:py-20 md:py-24 lg:py-32 overflow-hidden">
+    <div class="absolute inset-0 batik-hadiah"></div>
+    <div class="container mx-auto px-4 sm:px-6 max-w-3xl relative z-10">
+      <div class="text-center mb-10 sm:mb-12 md:mb-14 reveal-on-scroll">
+        <h2 class="font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl italic text-cream font-semibold">Doa Restu & Tanda Kasih</h2>
+        <div class="elegant-divider mt-4 sm:mt-5 md:mt-6"><div class="line w-16 sm:w-20 bg-gold/40"></div><div class="dot bg-gold"></div><div class="line w-16 sm:w-20 bg-gold/40"></div></div>
+        <p class="text-cream/80 mt-5 sm:mt-6 font-cormorant text-base sm:text-lg md:text-xl italic">Doa dan perhatian Anda adalah kebahagiaan tersendiri bagi kami.<br>Bagi yang ingin memberi hadiah, dapat dikirimkan melalui rekening berikut:</p>
+      </div>
+
+      <div class="rekening-card rounded-2xl p-6 sm:p-8 md:p-10 lg:p-12 text-center reveal-on-scroll pulse-border relative z-10">
+        <div class="inline-block px-4 sm:px-5 py-1 rounded-full bg-gold/20 text-gold text-[0.65rem] sm:text-xs tracking-wider uppercase mb-5 sm:mb-6">Rekening Pernikahan</div>
+        
+        <div class="flex justify-center mb-4 sm:mb-5">
+          <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center shadow-xl">
+            <span class="text-xl sm:text-2xl font-bold text-brown-deep font-playfair">BRI</span>
+          </div>
+        </div>
+        
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-5 sm:p-6 mb-5 sm:mb-6">
+          <p class="text-gold text-[0.65rem] sm:text-xs tracking-wider uppercase mb-2 sm:mb-3">Nomor Rekening</p>
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+            <p class="font-playfair text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-wider text-cream font-semibold break-all">1234-5678-9012-3456</p>
+            <button onclick="copyRekening()" class="copy-btn bg-gold/20 hover:bg-gold text-gold hover:text-brown-deep px-4 sm:px-5 py-2 rounded-full text-[0.7rem] sm:text-xs tracking-wider transition-all duration-300 flex items-center gap-2 font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 sm:h-4 sm:w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+              Salin
+            </button>
+          </div>
+        </div>
+        
+        <div class="space-y-2 sm:space-y-3 text-cream/80 text-sm sm:text-base">
+          <p class="flex items-center justify-center gap-2 flex-wrap"><span>👥</span> a.n <strong class="text-gold font-semibold">Muhamad Ridwansyah & Siti Aminah</strong></p>
+          <p class="text-xs sm:text-sm mt-3 sm:mt-4 italic">Setiap kebaikan dan doa yang Anda berikan adalah cahaya bagi rumah tangga kami.<br>Terima kasih tak terhingga atas perhatian dan kasih sayang Bapak/Ibu/Saudara/i.</p>
+        </div>
+        
+        <div id="copyToast" class="hidden fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-gold text-brown-deep px-5 sm:px-6 py-2.5 sm:py-3 rounded-full text-xs sm:text-sm font-semibold shadow-xl z-50 animate-fadeIn whitespace-nowrap">✓ Nomor rekening telah disalin!</div>
+      </div>
+      
+      <div class="text-center mt-8 sm:mt-10 md:mt-12 reveal-on-scroll relative z-10">
+        <div class="inline-flex items-center gap-2 sm:gap-3 text-gold/70 bg-white/5 px-4 sm:px-6 py-2.5 sm:py-3 rounded-full backdrop-blur-sm border border-gold/20">
+          <span class="text-lg sm:text-xl">🤲</span>
+          <span class="text-[0.7rem] sm:text-sm tracking-wide font-light">Doa tulus Anda adalah hadiah yang paling bermakna</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (tanpa batik) -->
+  <footer class="bg-brown-deep py-12 sm:py-16 text-center relative">
+    <div class="container mx-auto px-4 sm:px-6">
+      <span class="font-playfair text-5xl sm:text-6xl italic text-gold block">R & A</span>
+      <p class="text-gold/40 max-w-xl mx-auto mt-4 sm:mt-5 text-sm sm:text-base italic font-cormorant px-4">"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya." — QS. Ar-Rum: 21</p>
+      <div class="w-24 sm:w-32 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent mx-auto my-6 sm:my-8"></div>
+      <p class="text-[0.65rem] sm:text-xs tracking-[0.2em] text-gold/40">04 · 07 · 2026 &nbsp;·&nbsp; Bogor, Jawa Barat</p>
+      <div class="mt-4 sm:mt-5 text-[0.6rem] sm:text-xs text-gold/30">Kp Kaum RT 03 RW 11 No 21, Kel. Ciparigi, Bogor Utara</div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+      });
+    }
+
+    // COUNTDOWN TIMER
+    function updateCountdown() {
+      const weddingDate = new Date('2026-07-04T09:00:00');
+      const now = new Date();
+      const diff = weddingDate - now;
+      if (diff <= 0) {
+        document.getElementById('cd-days').innerText = '00';
+        document.getElementById('cd-hours').innerText = '00';
+        document.getElementById('cd-mins').innerText = '00';
+        document.getElementById('cd-secs').innerText = '00';
+        return;
+      }
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (86400000)) / 3600000);
+      const mins = Math.floor((diff % 3600000) / 60000);
+      const secs = Math.floor((diff % 60000) / 1000);
+      document.getElementById('cd-days').innerText = String(days).padStart(2, '0');
+      document.getElementById('cd-hours').innerText = String(hours).padStart(2, '0');
+      document.getElementById('cd-mins').innerText = String(mins).padStart(2, '0');
+      document.getElementById('cd-secs').innerText = String(secs).padStart(2, '0');
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // PERSONALIZED GREETING
+    function getParameterByName(name, url = window.location.href) {
+      name = name.replace(/[\[\]]/g, '\\$&');
+      const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+      const results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    function formatGuestName(rawName) {
+      if (!rawName) return null;
+      let cleaned = rawName.trim().replace(/\s+/g, ' ');
+      let words = cleaned.split(' ');
+      let capitalized = words.map(word => {
+        if (word.length === 0) return word;
+        return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+      }).join(' ');
+      return capitalized;
+    }
+
+    function setPersonalizedGreeting() {
+      let guestName = getParameterByName('name');
+      if (!guestName && window.location.search && window.location.search.includes('?=')) {
+        let raw = window.location.search.split('?=')[1];
+        if (raw) guestName = raw.split('&')[0];
+      }
+      
+      const greetingContainer = document.getElementById('greetingText');
+      if (!greetingContainer) return;
+      
+      if (guestName && guestName !== '') {
+        const formattedName = formatGuestName(guestName);
+        greetingContainer.innerHTML = `${formattedName}<br><span class="text-base sm:text-lg md:text-xl font-light text-gold mt-2 sm:mt-3 block">Kami sekeluarga mengundang dan sangat berharap</span><span class="text-xl sm:text-2xl md:text-3xl font-semibold text-brown-deep mt-2 sm:mt-3 block">kehadiran Bapak/Ibu/Saudara/i</span>`;
+      } else {
+        greetingContainer.innerHTML = `Bapak/Ibu/Saudara/i<br><span class="text-base sm:text-lg md:text-xl font-light text-gold mt-2 sm:mt-3 block">Kami sekeluarga mengundang dan sangat berharap</span><span class="text-xl sm:text-2xl md:text-3xl font-semibold text-brown-deep mt-2 sm:mt-3 block">kehadiran Anda sekalian</span>`;
+      }
+    }
+    setPersonalizedGreeting();
+
+    // COPY REKENING
+    window.copyRekening = function() {
+      const rekeningNumber = "1234-5678-9012-3456";
+      navigator.clipboard.writeText(rekeningNumber).then(() => {
+        const toast = document.getElementById('copyToast');
+        toast.classList.remove('hidden');
+        setTimeout(() => toast.classList.add('hidden'), 2000);
+      }).catch(() => alert('Tekan Ctrl+C untuk menyalin: ' + rekeningNumber));
+    }
+
+    // SCROLL REVEAL
+    const revealElements = document.querySelectorAll('.reveal-on-scroll');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('revealed');
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -30px 0px' });
+    revealElements.forEach(el => observer.observe(el));
+
+    // SMOOTH SCROLL
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (mobileMenu) mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
