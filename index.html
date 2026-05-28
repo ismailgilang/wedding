@@ -3,7 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Pernikahan Ridwansyah & Siti Aminah — 04 Juli 2026</title>
+  
+  <!-- ========== META TAGS SEO & SOCIAL MEDIA ========== -->
+  <!-- Primary Meta Tags -->
+  <title>Pernikahan Ridwansyah & Siti Aminah — 04 Juli 2026 | Undangan Digital</title>
+  <meta name="title" content="Undangan Pernikahan Ridwansyah & Siti Aminah">
+  <meta name="description" content="Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan putra-putri kami. Sabtu, 04 Juli 2026 di Bogor, Jawa Barat.">
+  <meta name="keywords" content="undangan pernikahan, ridwansyah, siti aminah, pernikahan islami, undangan digital, wedding invitation, 04 juli 2026, bogor">
+  <meta name="author" content="Ridwansyah & Siti Aminah">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="Indonesian">
+  <meta name="revisit-after" content="7 days">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wedding-ridwan-aminah.my.id/">
+  <meta property="og:title" content="Undangan Pernikahan Ridwansyah & Siti Aminah">
+  <meta property="og:description" content="Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan putra-putri kami. Sabtu, 04 Juli 2026 di Bogor, Jawa Barat.">
+  <meta property="og:image" content="https://wedding-ridwan-aminah.my.id/images/og-image.jpg">
+  <meta property="og:site_name" content="Pernikahan Ridwansyah & Siti Aminah">
+  <meta property="og:locale" content="id_ID">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://wedding-ridwan-aminah.my.id/">
+  <meta property="twitter:title" content="Undangan Pernikahan Ridwansyah & Siti Aminah">
+  <meta property="twitter:description" content="Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan putra-putri kami. Sabtu, 04 Juli 2026 di Bogor, Jawa Barat.">
+  <meta property="twitter:image" content="https://wedding-ridwan-aminah.my.id/images/og-image.jpg">
+  
+  <!-- WhatsApp / Telegram preview -->
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  
+  <!-- Instagram / Social Media -->
+  <meta name="theme-color" content="#C6A43F">
+  <meta name="msapplication-TileColor" content="#C6A43F">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://wedding-ridwan-aminah.my.id/">
+  
+  <!-- Schema.org markup for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Pernikahan Ridwansyah & Siti Aminah",
+    "description": "Acara pernikahan Ridwansyah dan Siti Aminah",
+    "startDate": "2026-07-04T09:00:00+07:00",
+    "endDate": "2026-07-04T17:00:00+07:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Kp Kaum RT 03 RW 11 No 21",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kp Kaum RT 03 RW 11 No 21",
+        "addressLocality": "Kelurahan Ciparigi",
+        "addressRegion": "Bogor Utara",
+        "addressCountry": "Indonesia"
+      }
+    },
+    "image": "https://wedding-ridwan-aminah.my.id/images/og-image.jpg",
+    "performer": [
+      {
+        "@type": "Person",
+        "name": "Muhamad Ridwansyah"
+      },
+      {
+        "@type": "Person",
+        "name": "Siti Aminah"
+      }
+    ]
+  }
+  </script>
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -62,6 +136,10 @@
       50% { transform: translateY(-10px); }
       100% { transform: translateY(0px); }
     }
+    @keyframes modalFadeIn {
+      0% { opacity: 0; transform: scale(0.9); }
+      100% { opacity: 1; transform: scale(1); }
+    }
     
     .animate-fadeUp {
       animation: fadeInUp 1s cubic-bezier(0.2, 0.9, 0.4, 1.1) forwards;
@@ -77,6 +155,9 @@
     }
     .float-slow {
       animation: float 4s ease-in-out infinite;
+    }
+    .modal-animate {
+      animation: modalFadeIn 0.4s ease forwards;
     }
     
     /* Elegant divider */
@@ -184,6 +265,32 @@
       .countdown-label { font-size: 0.7rem; }
     }
     
+    /* Modal Permission */
+    .permission-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.85);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .permission-card {
+      background: linear-gradient(145deg, #FAF7F0, #F5F0E6);
+      max-width: 400px;
+      width: 90%;
+      padding: 2rem;
+      border-radius: 24px;
+      text-align: center;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+      border: 1px solid rgba(198,164,63,0.3);
+    }
+    
     /* Photo circle */
     .photo-circle {
       background: linear-gradient(135deg, #C6A43F, #9E8232);
@@ -227,8 +334,24 @@
 </head>
 <body class="antialiased">
 
-  <!-- Audio Player - Menggunakan file backsound.mp3, autoplay, loop, hidden -->
-  <audio id="backgroundMusic" src="backsound.mp3" autoplay loop style="display: none;"></audio>
+  <!-- Permission Modal untuk Play Musik -->
+  <div id="permissionModal" class="permission-modal">
+    <div class="permission-card modal-animate">
+      <div class="text-5xl mb-4">🎵</div>
+      <h3 class="font-playfair text-2xl italic text-brown-deep mb-3">Izinkan Musik Latar</h3>
+      <p class="text-taupe text-sm mb-6 leading-relaxed">
+        Kami ingin mempersembahkan lagu pengiring untuk menambah suasana syukur.<br>
+        Klik tombol di bawah untuk mengizinkan musik diputar.
+      </p>
+      <button id="allowMusicBtn" class="btn-outline px-8 py-3 text-sm tracking-[0.2em] uppercase text-brown-deep hover:text-charcoal transition-all duration-300">
+        ♪ Izinkan Musik ♪
+      </button>
+      <p class="text-gold/50 text-[0.6rem] mt-5">Atau klik di luar kotak ini untuk melanjutkan tanpa musik</p>
+    </div>
+  </div>
+
+  <!-- Audio Player -->
+  <audio id="backgroundMusic" src="backsound.mp3" loop style="display: none;"></audio>
 
   <!-- Navigation -->
   <nav class="fixed top-0 left-0 w-full z-50 py-3 sm:py-4 md:py-5 px-4 sm:px-6 md:px-12 flex justify-between items-center bg-[#FAF7F0]/95 backdrop-blur-md border-b border-[#C6A43F]/20 transition-all duration-300">
@@ -433,40 +556,45 @@
   </footer>
 
   <script>
-    // ========== AUTO PLAY MUSIC (backsound.mp3) ==========
-    // Karena browser memblokir autoplay tanpa interaksi, kita tetap berusaha
+    // ========== PERMISSION MODAL & MUSIC PLAYER ==========
+    const modal = document.getElementById('permissionModal');
+    const allowBtn = document.getElementById('allowMusicBtn');
     const audio = document.getElementById('backgroundMusic');
+    let musicAllowed = false;
     
-    // Set volume ke 50% agar tidak terlalu kencang
+    // Set volume
     if (audio) {
       audio.volume = 0.5;
-      
-      // Coba play otomatis
-      const playPromise = audio.play();
-      
-      if (playPromise !== undefined) {
-        playPromise.then(() => {
-          // Autoplay berhasil
-          console.log('Musik berjalan otomatis');
-        }).catch(() => {
-          // Autoplay diblokir browser, akan play saat user klik pertama kali
-          console.log('Autoplay diblokir, menunggu interaksi user');
-          
-          // Fungsi untuk play setelah user interaksi
-          const playOnInteraction = () => {
-            audio.play();
-            // Hapus event listener setelah play berhasil
-            document.removeEventListener('click', playOnInteraction);
-            document.removeEventListener('touchstart', playOnInteraction);
-            document.removeEventListener('scroll', playOnInteraction);
-          };
-          
-          // Tunggu user klik atau sentuh atau scroll
-          document.addEventListener('click', playOnInteraction);
-          document.addEventListener('touchstart', playOnInteraction);
-          document.addEventListener('scroll', playOnInteraction);
+    }
+    
+    // Function to play music
+    function playMusic() {
+      if (audio && !musicAllowed) {
+        audio.play().then(() => {
+          musicAllowed = true;
+          console.log('Musik mulai diputar');
+        }).catch(err => {
+          console.log('Gagal memutar musik:', err);
         });
       }
+    }
+    
+    // Allow music via button
+    if (allowBtn) {
+      allowBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        playMusic();
+        if (modal) modal.style.display = 'none';
+      });
+    }
+    
+    // Close modal when clicking outside (without playing music)
+    if (modal) {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
     }
     
     // ========== COUNTDOWN TIMER ==========
