@@ -426,12 +426,13 @@
         <div class="text-center reveal-on-scroll transition-all duration-700 hover:translate-y-[-8px]">
           <div class="w-36 h-36 xs:w-40 xs:h-40 sm:w-44 sm:h-44 md:w-48 md:h-48 mx-auto rounded-full photo-circle flex items-center justify-center mb-4 sm:mb-5 md:mb-6">
             <div class="w-[132px] h-[132px] xs:w-[148px] xs:h-[148px] sm:w-[164px] sm:h-[164px] md:w-[180px] md:h-[180px] rounded-full bg-gradient-to-br from-brown-soft to-brown-deep flex items-center justify-center shadow-2xl">
-              <span class="font-playfair text-5xl sm:text-6xl md:text-7xl italic text-cream font-bold">M</span>
+              <span class="font-playfair text-5xl sm:text-6xl md:text-7xl italic text-cream font-bold">S</span>
             </div>
           </div>
-          <h3 class="font-playfair text-2xl sm:text-3xl md:text-4xl italic text-brown-deep font-semibold">Muhamad Ridwansyah S.E.</h3>
-          <p class="text-taupe text-sm sm:text-base mt-2">Putra dari</p>
-          <p class="text-brown-soft text-base sm:text-lg mt-3 leading-relaxed font-medium">Bapak Hasan Basri<br>& Ibu Siti Awaliyah</p>
+          <h3 class="font-playfair text-2xl sm:text-3xl md:text-4xl italic text-brown-deep font-semibold">Siti Aminah S.pd</h3>
+          <p class="text-taupe text-sm sm:text-base mt-2">Putri dari (Alm)</p>
+          <p class="text-brown-soft text-base sm:text-lg mt-3 leading-relaxed font-medium">Bapak H. Sulhi<br>& Ibu Hj. Siti Sa'diyah</p>
+          <p class="text-gold/50 text-xs sm:text-sm mt-3 italic">Al-Fatihah</p>
         </div>
         <div class="text-center reveal-on-scroll">
           <span class="font-cormorant text-6xl sm:text-7xl md:text-8xl text-gold block">&</span>
@@ -440,13 +441,12 @@
         <div class="text-center reveal-on-scroll transition-all duration-700 hover:translate-y-[-8px]">
           <div class="w-36 h-36 xs:w-40 xs:h-40 sm:w-44 sm:h-44 md:w-48 md:h-48 mx-auto rounded-full photo-circle flex items-center justify-center mb-4 sm:mb-5 md:mb-6">
             <div class="w-[132px] h-[132px] xs:w-[148px] xs:h-[148px] sm:w-[164px] sm:h-[164px] md:w-[180px] md:h-[180px] rounded-full bg-gradient-to-br from-brown-soft to-brown-deep flex items-center justify-center shadow-2xl">
-              <span class="font-playfair text-5xl sm:text-6xl md:text-7xl italic text-cream font-bold">S</span>
+              <span class="font-playfair text-5xl sm:text-6xl md:text-7xl italic text-cream font-bold">M</span>
             </div>
           </div>
-          <h3 class="font-playfair text-2xl sm:text-3xl md:text-4xl italic text-brown-deep font-semibold">Siti Aminah S.pd</h3>
-          <p class="text-taupe text-sm sm:text-base mt-2">Putri dari (Alm)</p>
-          <p class="text-brown-soft text-base sm:text-lg mt-3 leading-relaxed font-medium">Bapak H. Sulhi<br>& Ibu Hj. Siti Sa'diyah</p>
-          <p class="text-gold/50 text-xs sm:text-sm mt-3 italic">Al-Fatihah</p>
+          <h3 class="font-playfair text-2xl sm:text-3xl md:text-4xl italic text-brown-deep font-semibold">Muhamad Ridwansyah S.E.</h3>
+          <p class="text-taupe text-sm sm:text-base mt-2">Putra dari</p>
+          <p class="text-brown-soft text-base sm:text-lg mt-3 leading-relaxed font-medium">Bapak Hasan Basri<br>& Ibu Siti Awaliyah</p>
         </div>
       </div>
     </div>
@@ -643,20 +643,48 @@
 
     function formatGuestName(rawName) {
       if (!rawName) return null;
+
+      // Replace common multiple spaces with single space, and trim
       let cleaned = rawName.trim().replace(/\s+/g, ' ');
+
+      // Split into words by space
       let words = cleaned.split(' ');
-      let capitalized = words.map(word => {
-        if (word.length === 0) return word;
-        return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
-      }).join(' ');
-      return capitalized;
+      let formattedWords = [];
+
+      for (let i = 0; i < words.length; i++) {
+        let word = words[i];
+        if (word.length === 0) {
+          formattedWords.push(word);
+          continue;
+        }
+
+        // Check for specific abbreviation patterns like "S.Pd."
+        if (word.toUpperCase() === 'S' && i + 1 < words.length && words[i+1].toLowerCase().startsWith('pd')) {
+            // Found "S" followed by "Pd" (or "pd" or "pd.")
+            // Assume it should be "S.Pd."
+            formattedWords.push('S.Pd.');
+            i++; // Skip the next word as it's been consumed
+        } else if (word.toLowerCase().startsWith('s.pd')) {
+            // Already "S.Pd." like, just normalize case
+            formattedWords.push('S.Pd.');
+        }
+        else if (word.includes('.')) {
+          // If a word contains a period but is not "S.Pd.", just capitalize its first letter
+          // and keep the rest as is (e.g., "dr." -> "Dr.")
+          formattedWords.push(word.charAt(0).toUpperCase() + word.slice(1));
+        } else {
+          // For general words, capitalize first letter and lowercase the rest
+          formattedWords.push(word.charAt(0).toUpperCase() + word.slice(1).toLowerCase());
+        }
+      }
+      return formattedWords.join(' ');
     }
 
     function setPersonalizedGreeting() {
       let guestName = getParameterByName('name');
       if (!guestName && window.location.search && window.location.search.includes('?=')) {
         let raw = window.location.search.split('?=')[1];
-        if (raw) guestName = raw.split('&')[0];
+        if (raw) guestName = decodeURIComponent(raw.split('&')[0]);
       }
       
       const greetingContainer = document.getElementById('greetingText');
