@@ -97,13 +97,14 @@
             'playfair': ['Playfair Display', 'serif'],
             'cormorant': ['Cormorant Garamond', 'serif'],
             'lato': ['Lato', 'sans-serif'],
+            'arabic': ['Amiri', 'Scheherazade New', 'serif'],
           },
         }
       }
     }
   </script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Lato:wght@300;400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Lato:wght@300;400;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap');
     
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -355,9 +356,10 @@
 
   <!-- Navigation -->
   <nav class="fixed top-0 left-0 w-full z-50 py-3 sm:py-4 md:py-5 px-4 sm:px-6 md:px-12 flex justify-between items-center bg-[#FAF7F0]/95 backdrop-blur-md border-b border-[#C6A43F]/20 transition-all duration-300">
-    <div class="font-playfair italic text-gold text-lg sm:text-xl md:text-2xl tracking-wide">R & A</div>
+    <div class="font-playfair italic text-gold text-lg sm:text-xl md:text-2xl tracking-wide">A & R</div>
     <ul class="hidden md:flex gap-6 lg:gap-10 text-xs lg:text-sm tracking-[0.2em] uppercase font-light text-brown-soft">
       <li><a href="#pasangan" class="hover:text-gold transition-colors duration-300">Pasangan</a></li>
+      <li><a href="#kisah" class="hover:text-gold transition-colors duration-300">Kisah</a></li>
       <li><a href="#acara" class="hover:text-gold transition-colors duration-300">Acara</a></li>
       <li><a href="#ucapan" class="hover:text-gold transition-colors duration-300">Ucapan</a></li>
       <li><a href="#hadiah" class="hover:text-gold transition-colors duration-300">Hadiah</a></li>
@@ -370,6 +372,7 @@
   <div id="mobileMenu" class="hidden fixed top-14 left-0 w-full bg-[#FAF7F0]/98 backdrop-blur-lg z-40 py-6 px-6 border-b border-gold/20 md:hidden">
     <ul class="flex flex-col gap-5 text-center">
       <li><a href="#pasangan" class="text-brown-soft hover:text-gold transition-colors text-sm tracking-[0.2em] uppercase">Pasangan</a></li>
+      <li><a href="#kisah" class="text-brown-soft hover:text-gold transition-colors text-sm tracking-[0.2em] uppercase">Kisah</a></li>
       <li><a href="#acara" class="text-brown-soft hover:text-gold transition-colors text-sm tracking-[0.2em] uppercase">Acara</a></li>
       <li><a href="#ucapan" class="text-brown-soft hover:text-gold transition-colors text-sm tracking-[0.2em] uppercase">Ucapan</a></li>
       <li><a href="#hadiah" class="text-brown-soft hover:text-gold transition-colors text-sm tracking-[0.2em] uppercase">Hadiah</a></li>
@@ -386,9 +389,9 @@
     </div>
     <div class="relative z-10 px-4 sm:px-6 max-w-5xl mx-auto">
       <div class="text-3xl sm:text-4xl text-gold/60 mb-4 sm:mb-6 animate-fadeUp opacity-0 float-slow" style="animation-delay: 0.2s">✦ ✦ ✦</div>
-      <h1 class="font-playfair text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl italic text-cream font-semibold leading-[1.1] tracking-wide animate-fadeUp opacity-0" style="animation-delay: 0.3s">Muhamad Ridwansyah</h1>
+      <h1 class="font-playfair text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl italic text-cream font-semibold leading-[1.1] animate-fadeUp opacity-0" style="animation-delay: 0.6s">Ami</h1>
       <span class="font-cormorant text-4xl sm:text-5xl md:text-6xl text-gold block my-3 sm:my-4 animate-fadeUp opacity-0" style="animation-delay: 0.45s">&</span>
-      <h1 class="font-playfair text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl italic text-cream font-semibold leading-[1.1] animate-fadeUp opacity-0" style="animation-delay: 0.6s">Siti Aminah</h1>
+      <h1 class="font-playfair text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl italic text-cream font-semibold leading-[1.1] tracking-wide animate-fadeUp opacity-0" style="animation-delay: 0.3s">Ridwan</h1>
       <div class="elegant-divider my-6 sm:my-8 md:my-10 animate-fadeUp opacity-0" style="animation-delay: 0.75s">
         <div class="line"></div>
         <div class="dot"></div>
@@ -421,18 +424,20 @@
         <p class="text-gold text-[0.65rem] sm:text-xs tracking-[0.35em] uppercase mb-2 sm:mb-3">Mempelai</p>
         <h2 class="font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl italic text-brown-deep font-semibold">Dua Jiwa, Satu Tujuan</h2>
         <div class="elegant-divider mt-4 sm:mt-5 md:mt-6"><div class="line w-16 sm:w-20"></div><div class="dot"></div><div class="line w-16 sm:w-20"></div></div>
+        <div class="max-w-2xl mx-auto mt-6 sm:mt-8 reveal-on-scroll">
+          <p class="font-arabic text-[1.1rem] sm:text-[1.3rem] md:text-[1.5rem] leading-[2] text-brown-deep" dir="rtl">وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ</p>
+          <p class="text-taupe text-xs sm:text-sm md:text-base mt-4 italic leading-relaxed">"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang."</p>
+          <p class="text-gold/60 text-[0.6rem] sm:text-xs tracking-[0.2em] uppercase mt-2">— QS. Ar-Rum: 21 —</p>
+        </div>
       </div>
       <div class="grid md:grid-cols-[1fr_auto_1fr] gap-8 sm:gap-10 md:gap-12 items-center">
         <div class="text-center reveal-on-scroll transition-all duration-700 hover:translate-y-[-8px]">
           <div class="w-36 h-36 xs:w-40 xs:h-40 sm:w-44 sm:h-44 md:w-48 md:h-48 mx-auto rounded-full photo-circle flex items-center justify-center mb-4 sm:mb-5 md:mb-6">
             <div class="w-[132px] h-[132px] xs:w-[148px] xs:h-[148px] sm:w-[164px] sm:h-[164px] md:w-[180px] md:h-[180px] rounded-full bg-gradient-to-br from-brown-soft to-brown-deep flex items-center justify-center shadow-2xl">
-              <span class="font-playfair text-5xl sm:text-6xl md:text-7xl italic text-cream font-bold">S</span>
+              <span class="font-playfair text-5xl sm:text-6xl md:text-7xl italic text-cream font-bold">A</span>
             </div>
           </div>
-          <h3 class="font-playfair text-2xl sm:text-3xl md:text-4xl italic text-brown-deep font-semibold">Siti Aminah S.pd</h3>
-          <p class="text-taupe text-sm sm:text-base mt-2">Putri dari (Alm)</p>
-          <p class="text-brown-soft text-base sm:text-lg mt-3 leading-relaxed font-medium">Bapak H. Sulhi<br>& Ibu Hj. Siti Sa'diyah</p>
-          <p class="text-gold/50 text-xs sm:text-sm mt-3 italic">Al-Fatihah</p>
+          <h3 class="font-playfair text-2xl sm:text-3xl md:text-4xl italic text-brown-deep font-semibold">Ami</h3>
         </div>
         <div class="text-center reveal-on-scroll">
           <span class="font-cormorant text-6xl sm:text-7xl md:text-8xl text-gold block">&</span>
@@ -441,12 +446,62 @@
         <div class="text-center reveal-on-scroll transition-all duration-700 hover:translate-y-[-8px]">
           <div class="w-36 h-36 xs:w-40 xs:h-40 sm:w-44 sm:h-44 md:w-48 md:h-48 mx-auto rounded-full photo-circle flex items-center justify-center mb-4 sm:mb-5 md:mb-6">
             <div class="w-[132px] h-[132px] xs:w-[148px] xs:h-[148px] sm:w-[164px] sm:h-[164px] md:w-[180px] md:h-[180px] rounded-full bg-gradient-to-br from-brown-soft to-brown-deep flex items-center justify-center shadow-2xl">
-              <span class="font-playfair text-5xl sm:text-6xl md:text-7xl italic text-cream font-bold">M</span>
+              <span class="font-playfair text-5xl sm:text-6xl md:text-7xl italic text-cream font-bold">R</span>
             </div>
           </div>
-          <h3 class="font-playfair text-2xl sm:text-3xl md:text-4xl italic text-brown-deep font-semibold">Muhamad Ridwansyah S.E.</h3>
-          <p class="text-taupe text-sm sm:text-base mt-2">Putra dari</p>
-          <p class="text-brown-soft text-base sm:text-lg mt-3 leading-relaxed font-medium">Bapak Hasan Basri<br>& Ibu Siti Awaliyah</p>
+          <h3 class="font-playfair text-2xl sm:text-3xl md:text-4xl italic text-brown-deep font-semibold">Ridwan</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOA SECTION -->
+  <section class="bg-cream py-16 sm:py-20 md:py-24 lg:py-32">
+    <div class="container mx-auto px-4 sm:px-6 max-w-4xl">
+      <div class="max-w-3xl mx-auto text-center reveal-on-scroll">
+        <p class="text-gold text-[0.65rem] sm:text-xs tracking-[0.35em] uppercase mb-4 sm:mb-5">Doa Untuk Kedua Mempelai</p>
+        <div class="elegant-divider mb-8 sm:mb-10"><div class="line w-16 sm:w-20"></div><div class="dot"></div><div class="line w-16 sm:w-20"></div></div>
+        <p class="font-playfair text-2xl sm:text-3xl md:text-4xl italic text-brown-deep font-semibold leading-relaxed">
+          Maha suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan.
+          <span class="block text-gold text-xl sm:text-2xl md:text-3xl mt-4 font-normal">Ya Allah, semoga ridho-Mu tercurah mengiringi pernikahan putra putri kami.</span>
+        </p>
+        <div class="elegant-divider mt-8 sm:mt-10"><div class="line w-16 sm:w-20"></div><div class="dot"></div><div class="line w-16 sm:w-20"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRIDE & GROOM SECTION -->
+  <section class="bg-ivory py-16 sm:py-20 md:py-24 lg:py-32">
+    <div class="container mx-auto px-4 sm:px-6 max-w-5xl">
+      <div class="text-center mb-12 sm:mb-16 reveal-on-scroll">
+        <p class="text-gold text-[0.65rem] sm:text-xs tracking-[0.35em] uppercase mb-2 sm:mb-3">Keluarga Besar</p>
+        <h2 class="font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl italic text-brown-deep font-semibold">Kedua Mempelai</h2>
+        <div class="elegant-divider mt-4 sm:mt-5 md:mt-6"><div class="line w-16 sm:w-20"></div><div class="dot"></div><div class="line w-16 sm:w-20"></div></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 sm:gap-10 md:gap-14">
+        <!-- Bride -->
+        <div class="bg-white rounded-2xl p-8 sm:p-10 shadow-lg border border-gold/20 text-center reveal-on-scroll hover-card">
+          <p class="text-gold/60 text-[0.6rem] sm:text-xs tracking-[0.3em] uppercase mb-2">The Bride</p>
+          <h3 class="font-playfair text-2xl sm:text-3xl md:text-4xl italic text-brown-deep font-semibold">Siti Aminah, S.Pd.</h3>
+          <p class="text-taupe text-sm sm:text-base mt-4 leading-relaxed">
+            Putri keempat dari<br>
+            <span class="text-brown-soft font-medium">Bapak H. Sulhi <span class="text-gold/60">(Alm)</span></span><br>
+            &<br>
+            <span class="text-brown-soft font-medium">Ibu Hj. Siti Sa'diyah <span class="text-gold/60">(Alm)</span></span>
+          </p>
+        </div>
+
+        <!-- Groom -->
+        <div class="bg-white rounded-2xl p-8 sm:p-10 shadow-lg border border-gold/20 text-center reveal-on-scroll hover-card">
+          <p class="text-gold/60 text-[0.6rem] sm:text-xs tracking-[0.3em] uppercase mb-2">The Groom</p>
+          <h3 class="font-playfair text-2xl sm:text-3xl md:text-4xl italic text-brown-deep font-semibold">Muhamad Ridwansyah, S.E.</h3>
+          <p class="text-taupe text-sm sm:text-base mt-4 leading-relaxed">
+            Putra kedua dari<br>
+            <span class="text-brown-soft font-medium">Bapak Hasan Basri</span><br>
+            &<br>
+            <span class="text-brown-soft font-medium">Ibu Siti Alawiyah</span>
+          </p>
         </div>
       </div>
     </div>
@@ -497,8 +552,9 @@
           <div class="space-y-2 sm:space-y-3 text-brown-soft text-sm sm:text-base"><strong class="block text-gold text-[0.65rem] sm:text-xs tracking-wider uppercase">Lokasi</strong>Kp Kaum RT 03 RW 11 No 21<br>Kel. Ciparigi, Bogor Utara</div>
         </div>
       </div>
-      <div class="text-center mt-10 sm:mt-12 reveal-on-scroll">
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 sm:mt-12 reveal-on-scroll">
         <a href="https://maps.google.com/?q=Kp+Kaum+RT+03+RW+11+No+21+Ciparigi+Bogor+Utara" target="_blank" class="btn-outline inline-block px-6 sm:px-8 py-2.5 sm:py-3 text-[0.7rem] sm:text-xs tracking-[0.2em] text-brown-deep hover:text-charcoal transition-all duration-300">📍 Lihat Peta Lokasi</a>
+        <button onclick="addToCalendar()" class="btn-outline inline-block px-6 sm:px-8 py-2.5 sm:py-3 text-[0.7rem] sm:text-xs tracking-[0.2em] text-brown-deep hover:text-charcoal transition-all duration-300">📅 Simpan ke Kalender</button>
       </div>
     </div>
   </section>
@@ -546,12 +602,16 @@
 
   <!-- FOOTER -->
   <footer class="bg-brown-deep py-12 sm:py-16 text-center relative">
-    <div class="container mx-auto px-4 sm:px-6">
-      <span class="font-playfair text-5xl sm:text-6xl italic text-gold block">R & A</span>
-      <p class="text-gold/40 max-w-xl mx-auto mt-4 sm:mt-5 text-sm sm:text-base italic font-cormorant px-4">"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya." — QS. Ar-Rum: 21</p>
+    <div class="container mx-auto px-4 sm:px-6">  
+      <p class="font-playfair text-xl sm:text-2xl italic text-gold/80 mt-2">
+        Atas kehadiran dan doa restu dari Bapak/Ibu/Saudara/Saudari sekalian,<br>
+        kami mengucapkan terima kasih.
+      </p>
+      <p class="text-gold/50 text-xs sm:text-sm mt-6 sm:mt-8 italic font-cormorant">Kami yang berbahagia</p>
+      <p class="font-playfair text-xl sm:text-2xl italic text-gold mt-2">Ami & Ridwan</p>
       <div class="w-24 sm:w-32 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent mx-auto my-6 sm:my-8"></div>
       <p class="text-[0.65rem] sm:text-xs tracking-[0.2em] text-gold/40">04 · 07 · 2026 &nbsp;·&nbsp; Bogor, Jawa Barat</p>
-      <div class="mt-4 sm:mt-5 text-[0.6rem] sm:text-xs text-gold/30">Kp Kaum RT 03 RW 11 No 21, Kel. Ciparigi, Bogor Utara</div>
+      <div class="mt-3 text-[0.6rem] sm:text-xs text-gold/30">Kp Kaum RT 03 RW 11 No 21, Kel. Ciparigi, Bogor Utara</div>
     </div>
   </footer>
 
@@ -707,6 +767,19 @@
         toast.classList.remove('hidden');
         setTimeout(() => toast.classList.add('hidden'), 2000);
       }).catch(() => alert('Tekan Ctrl+C untuk menyalin: ' + rekeningNumber));
+    }
+
+    // ========== ADD TO CALENDAR ==========
+    window.addToCalendar = function() {
+      const event = {
+        title: 'Pernikahan Ridwansyah & Siti Aminah',
+        description: 'Akad Nikah: 09.00-10.00 WIB | Resepsi: 11.00-Selesai\nKp Kaum RT 03 RW 11 No 21, Kel. Ciparigi, Bogor Utara',
+        location: 'Kp Kaum RT 03 RW 11 No 21, Ciparigi, Bogor Utara',
+        start: '20260704T090000',
+        end: '20260704T170000'
+      };
+      const url = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.title)}&dates=${event.start}/${event.end}&details=${encodeURIComponent(event.description)}&location=${encodeURIComponent(event.location)}&ctz=Asia/Jakarta`;
+      window.open(url, '_blank');
     }
 
     // ========== SCROLL REVEAL ==========
